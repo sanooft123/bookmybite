@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Zap, Smartphone, Layout, Clock } from 'lucide-react';
+import { Check, Zap, Smartphone, Layout, Clock ,Instagram, Twitter, Facebook, Linkedin} from 'lucide-react';
 
 // Pricing Card Sub-component
 const PriceCard = ({ title, price, features, popular, buttonText }) => (
@@ -123,41 +123,74 @@ const LandingPage = () => {
       </section>
 
       <footer className="bg-white border-t border-slate-100 pt-16 pb-8 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
-          <div className="col-span-2 md:col-span-1">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-12 mb-12">
+            {/* Brand Column */}
+            <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-blue-600 p-1.5 rounded-lg"><Layout className="text-white w-4 h-4" /></div>
-              <span className="font-bold text-lg">BookMyBite</span>
+                <div className="bg-blue-600 p-1.5 rounded-lg">
+                <Layout className="text-white w-4 h-4" />
+                </div>
+                <span className="font-bold text-lg">BookMyBite</span>
             </div>
-            <p className="text-slate-500 text-sm">Empowering restaurants with enterprise-grade technology. Built on AWS.</p>
-          </div>
-          <div>
+            <p className="text-slate-500 text-sm leading-relaxed">
+                Empowering restaurants with enterprise-grade technology. Built on AWS.
+            </p>
+            </div>
+
+            {/* Product Column */}
+            <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-slate-400">Product</h4>
             <ul className="space-y-2 text-slate-600 text-sm">
-              <li>Features</li><li>Pricing</li><li>Infrastructure</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Features</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Pricing</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Infrastructure</li>
             </ul>
-          </div>
-          <div>
+            </div>
+
+            {/* Company Column */}
+            <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-slate-400">Company</h4>
             <ul className="space-y-2 text-slate-600 text-sm">
-              <li>Our Story</li><li>Contact Support</li><li>Partner Program</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Our Story</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Contact Support</li>
             </ul>
-          </div>
-          <div>
+            </div>
+
+            {/* Legal Column */}
+            <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-slate-400">Legal</h4>
             <ul className="space-y-2 text-slate-600 text-sm">
-              <li>Privacy Policy</li><li>Terms of Service</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Privacy Policy</li>
+                <li className="hover:text-blue-600 transition cursor-pointer">Terms of Service</li>
             </ul>
-          </div>
+            </div>
+
+            {/* SOCIAL MEDIA COLUMN */}
+            <div>
+            <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-slate-400">Follow Us</h4>
+            <div className="flex gap-4">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-pink-600 hover:bg-pink-50 transition-all">
+                <Instagram size={20} />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-50 transition-all">
+                <Twitter size={20} />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 transition-all">
+                <Facebook size={20} />
+                </a>
+            </div>
+            </div>
         </div>
+
+        {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto border-t border-slate-50 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-400 text-xs gap-4">
-          <p>© 2026 BookMyBite Inc. All rights reserved.</p>
-          <div className="flex items-center gap-2">
+            <p>© 2026 BookMyBite Inc. All rights reserved.</p>
+            <div className="flex items-center gap-2">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
             System Status: <span className="text-slate-600 font-medium">Operational</span>
-          </div>
+            </div>
         </div>
-      </footer>
+        </footer>
     </div>
   );
 };
