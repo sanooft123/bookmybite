@@ -87,7 +87,7 @@ const LandingPage = () => {
             {[
               { step: "1", title: "Register & Verify", desc: "Sign up and choose your plan. Our team verifies your business." },
               { step: "2", title: "Build Your Menu", desc: "Upload dishes, prices, and photos to our AWS S3 backed storage." },
-              { step: "3", title: "Print & Go Live", desc: "Download auto-generated QR codes and start receiving orders." }
+              { step: "3", title: "Go Live", desc: "Download auto-generated QR codes and start receiving orders." }
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-blue-100">
