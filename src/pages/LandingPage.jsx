@@ -169,7 +169,7 @@ const LandingPage = () => {
             <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-widest text-slate-400">Follow Us</h4>
             <div className="flex gap-4">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-pink-600 hover:bg-pink-50 transition-all">
+                <a href="https://www.instagram.com/bookmybite_app/" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-pink-600 hover:bg-pink-50 transition-all">
                 <Instagram size={20} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noreferrer" className="bg-slate-50 p-2 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-blue-50 transition-all">
