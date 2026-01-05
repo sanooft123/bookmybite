@@ -32,7 +32,7 @@ const Navbar = () => {
             <img 
             src={logo}
             alt="BookMyBite - Digital Restaurant QR Ordering System" 
-            className="w-8 h-8 object-contain rounded-lg" 
+            className="w-full h-10 object-contain rounded-lg" 
             title="BookMyBite Home"
             />
           </Link>
