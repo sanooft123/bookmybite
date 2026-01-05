@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, Layout } from 'lucide-react';
+import logo from '../assets/BookMyBite_Logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,10 +29,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-            <div className="bg-blue-600 p-1.5 rounded-lg">
-              <Layout className="text-white w-5 h-5" />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-slate-800">BookMyBite</span>
+            <img 
+              src={logo} 
+              alt="BookMyBite Logo" 
+              className="w-full h-10 object-contain rounded-lg" 
+            />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
